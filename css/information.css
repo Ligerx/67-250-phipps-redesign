@@ -1,0 +1,56 @@
+.video-container {
+  background-color: #22313F;
+}
+
+.gallery-container {
+  position:relative;
+}
+
+.gallery-embed {
+  position: absolute;
+}
+
+.gallery-text {
+  position: absolute;
+  right:17%;
+  top: 14%;
+  z-index: 1;
+
+  background-color: #78a22f;
+}
+
+.gallery-text h2 {
+  margin: 0px 10px 8px 10px;
+  color: #FFF;
+  text-align: left;
+}
+
+.gallery-text h4 {
+  margin: 0px 10px;
+  text-align: left;
+  color: #FFF;
+}
+
+.info {
+  background-color: #26A65B;
+}
+
+.info h2 {
+  color: #FFF;
+}
+
+.info strong {
+  color: #EFEFEF;
+}
+
+.info ul {
+  color: #333;
+}
+
+.gallery {
+  background-color: #2C3E50;
+}
+
+.graph-section {
+  /*background-color: #ECF0F1;*/
+}

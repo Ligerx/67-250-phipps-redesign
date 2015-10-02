@@ -1,0 +1,205 @@
+<!DOCTYPE html>   <!-- Tells the browser this is HTML 5 -->
+<html lang="en">  <!-- Root of the html document and is in English -->
+
+<!-- Talked to Prof Q and she said that ordered lists and horizontal lines weren't required -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Alex Wang">
+  <meta name="keywords" content="Phipps Conservatory University">
+  <meta name="description" content="Phipps Conservatory">
+
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/information.css" rel="stylesheet" type="text/css" />
+
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/show-divs.js"></script>
+  
+  <title>Information | Phipps Conservatory</title>
+
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <style type="text/css">
+    ${demo.css}
+  </style>
+  <script type="text/javascript">
+    $(function () {
+      $('.graph-container').highcharts({
+        title: {
+          text: 'Monthly Number of Visits',
+            x: -20 //center
+          },
+          subtitle: {
+            text: 'Source: phipps.conservatory.org',
+            x: -20
+          },
+          xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct']
+          },
+          yAxis: {
+            title: {
+              text: 'Number of Visitors'
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }]
+          },
+          tooltip: {
+            valueSuffix: 'Visitors'
+          },
+          legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+          },
+          series: [{
+            name: 'Carnegie Mellon University',
+            data: [122, 140, 112, 110, 201, 13, 28, 128, 98, 70]
+          }, {
+            name: 'University of Pittsburgh',
+            data: [143, 152, 97, 83, 212, 43, 29, 111, 67, 93]
+          }, {
+            name: 'Duquesne University',
+            data: [49, 63, 61, 31, 67, 4, 8, 101, 68, 76]
+          }]
+        });
+});
+</script>
+</head>
+
+<body>
+  <script src="js/highcharts.js"></script>
+  <script src="js/modules/exporting.js"></script>
+
+
+  <div class="header-container">
+    <header class="section group">
+      <div class="header-content">
+        <div class="logo col span_3_of_12 no-vertical-margin"><a href="index.html"><img src="images/logo-white.png" /></a></div>
+
+        <nav class="col span_9_of_12 no-vertical-margin">
+          <a href="information.html">More Information</a><a href="volunteer.html">Volunteer at Phipps</a><a href="http://phipps.conservatory.org/exhibits-and-events/index.aspx">Exhibits and Events</a>
+
+          <!-- Search bar goes here -->
+          <!-- https://www.udemy.com/blog/search-box-css/ -->
+          <form class="search">
+            <input class="search-box"type="text" placeholder="Search..." required />
+            <input class="search-button" type="button" value="Search">
+          </form>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="video-container">
+    <div class="section group">
+      <iframe width="1040" height="585" src="http://www.youtube.com/embed/cBMc4H6MQ1I?feature=player_embedded&autoplay=0&controls=2&disablekb=1&end=79&modestbranding=1&rel=0&showinfo=0&start=53" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="auto-height graph-section">
+    <section>
+      <div class="section group extra-bottom-margin"></div>
+      <h2>College Visitors</h2>
+
+      <div class="section group">
+        <div class="graph-container  col span_12_of_12" ></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="auto-height info">
+    <section class="hidden">
+      <div class="section group">
+        <div class="col span_1_of_12"></div>
+        <div class="col span_2_of_12">
+         <h2>Visit Phipps</h2>
+       </div>
+
+       <div class="col span_1_of_12"></div>
+
+       <div class="col span_4_of_12">
+        <ul>
+          <li>Open <strong>9:30am to 5pm</strong> Saturday to Thursday<br/><strong>9:30am to 10pm Friday</strong></li>
+          <li>Closed Thanksgiving and Christmas<br/><br/></li>
+          <li><strong>$14 for Students with a valid ID</strong><br/><br/></li>
+        </ul>
+      </div>
+      <div class="col span_4_of_12">
+        <ul>
+          <li>Phipps Conservatory and Botanical Gardens</li>
+          <li></br>One Schenley Park</li>
+          <li></br>Pittsburgh, PA 15213</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<div class="auto-height gallery">
+  <section class="hidden">
+
+    <div class="section group gallery-container">
+      <div class="gallery-text"><h4>Image</h4><h2>Gallery</h2></div>
+
+      <div class="gallery-embed" style='position: relative; padding-bottom: 56%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=55&size=big&setId=72157628293984067&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
+    </div>
+
+    <div class="section group">
+      <div align="center"><a href="https://www.flickr.com/photos/phippsconservatory/" class="button">More Pictures</a></div>
+    </div>
+  </section>
+</div>
+
+
+<div class="footer-container">
+ <footer class="section group hidden">
+  <iframe class="col span_5_of_12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6512360771985!2d-79.948524!3d40.43872100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f189f8429905%3A0x28a12fe50786460d!2sPhipps+Conservatory+and+Botanical+Gardens!5e0!3m2!1sen!2sus!4v1413946430966" width="424" height="315" frameborder="0" style="border:0"></iframe>
+
+  <div class="col span_1_of_12"></div> <!-- some empty space for content -->
+
+  <div class="col span_3_of_12">
+    <h3>Visit Us</h3>
+    <ul>
+      <li>Open 9:30am to 5pm Saturday to Thursday<br/>9:30am to 10pm Friday</li>
+      <li>Closed Thanksgiving and Christmas<br/><br/></li>
+      <li>$14 for Students with a valid ID<br/><br/></li>
+      <li>Phipps Conservatory and Botanical Gardens<br/>One Schenley Park<br/>Pittsburgh, PA 15213</li>
+    </ul>
+  </div>
+
+  <div class="col span_3_of_12">
+    <h3>Get in Touch</h3>
+    <ul>
+      <li><a href="phipps.conservatory.org">phipps.conservatory.org</a></li><br/>
+      <li><a href="mailto:generalinformation@pc.org">Send Us an Email</a></li><br/>
+      <li>412-622-6914</li>
+    </ul>
+
+    <br/>
+
+    <!-- Icons taken from https://www.behance.net/gallery/Geekly-40-Flat-Icons/10357351 -->
+    <a href="https://www.facebook.com/phippsconservatory"><img class="socialmedia-icon" src="images/Geekly - 40 Flat Icons/Icons/Social Media/Facebook.png"></a>
+
+    <a href="https://twitter.com/PhippsNews"><img class="socialmedia-icon" src="images/Geekly - 40 Flat Icons/Icons/Social Media/Twitter.png"></a>
+
+    <a href="http://www.youtube.com/user/phippsconservatory"><img class="socialmedia-icon" src="images/Geekly - 40 Flat Icons/Icons/Social Media/Youtube.png"></a>
+
+    <a href="https://www.flickr.com/photos/phippsconservatory"><img class="socialmedia-icon" src="images/Geekly - 40 Flat Icons/Icons/Social Media/Flickr.png"></a>
+
+    <br/><br/>
+    <p>&copy; 2014 | Alex Wang | 67-250</p>
+
+
+  </div>
+</footer>
+</div>
+
+</body>
+
+</html>

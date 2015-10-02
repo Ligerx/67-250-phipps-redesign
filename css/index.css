@@ -1,0 +1,91 @@
+.home-banner {
+	overflow: hidden;
+	height: calc(100vh - 60px);
+
+	/*https://lh4.googleusercontent.com/-NRj_Ns0t0SQ/U9JtuZdg--I/AAAAAAAAAMo/Y5giE5qGcG4/w2048-h1229/phipps%2Bjuly%2B18th%2B-12.jpg*/
+	background-image: url("../images/phipps-home-image-text.png");
+
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.visit-us {
+	background-color: #EEE;
+
+/*	background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Blank_US_Map_48states.svg/640px-Blank_US_Map_48states.svg.png);
+	background-position: 50% 25%;
+	background-repeat: no-repeat;
+	background-size: 30%;*/
+}
+
+.volunteer {
+	/*background-image: url(../images/pink-flowers.jpg);*/
+/*	position:relative;
+	overflow:hidden;*/
+	padding-bottom: 120px;
+	position:relative;
+	overflow:hidden;
+
+	/*background-color: rgba(44, 62, 80, 0.8);*/
+	background-color: rgba(34, 49, 63, 0.85);
+}
+
+.volunteer, .events h2 {
+	color: #EEE;
+}
+
+.full-length-image {
+	position:absolute;
+	max-width: 100%;
+	height: auto;
+	z-index: -10;
+
+	/*	top: -210px;
+	min-height: 730px;*/
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.dark-transparent {
+/*	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(1%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+	background-color: #2C3E50;
+	opacity: 0.3;
+}
+
+.events {
+	/*background-color: #ed9b33;*/
+	/*background-color: #ffcf01;*/
+	/*background-color: #c0b678;*/
+	/*background-color: #F1E3C5;*/
+	background-color: #EB9532;
+
+	color: #000;
+}
+
+.event-box {
+	background-color: #EEE;
+
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-bottom-left-radius: 15px;
+
+    box-shadow: 1px 2px 2px #888888;
+}
+
+.event-image {
+    width:512px;
+}
+
+.event-description {
+	margin-left: 10px;
+	margin-right: 5px;
+}

@@ -1,0 +1,45 @@
+.volunteer-banner {
+	overflow: hidden;
+	height: calc(40vh);
+	/*min-height: 100px;*/
+
+	/*https://lh4.googleusercontent.com/-NRj_Ns0t0SQ/U9JtuZdg--I/AAAAAAAAAMo/Y5giE5qGcG4/w2048-h1229/phipps%2Bjuly%2B18th%2B-12.jpg*/
+	background-image: url("../images/mini-phipps.png");
+
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.sign-up-form {
+	background-color: #22313F;
+}
+
+.sign-up-form h2 {
+	color: #FFF;
+}
+
+.sign-up-form form {
+	display: block;
+	margin: 0 auto;
+	width: 355px;
+	padding: 30px 30px;
+	background-color: #EEE;
+
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+    box-shadow: 1px 2px 6px #888888;
+}
+
+.sign-up-form form>input {
+	width: 350px;
+}
+.sign-up-form form>textarea {
+	width: 349px;
+	margin-top: 5px;
+}
+.sign-up-form form>.button {
+	width: 355px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>   <!-- Tells the browser this is HTML 5 -->
+<html lang="en">  <!-- Root of the html document and is in English -->
+
+<!-- Talked to Prof Q and she said that ordered lists and horizontal lines weren't required -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Alex Wang">
+  <meta name="keywords" content="Phipps Conservatory University">
+  <meta name="description" content="Phipps Conservatory">
+
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/volunteer.css" rel="stylesheet" type="text/css" />
+
+  <script src="js/jquery-2.1.1.js"></script>
+
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.css">
+  <script src="js/jquery-ui/external/jquery/jquery.js"></script>
+  <script src="js/jquery-ui/jquery-ui.js"></script>
+
+  <script src="js/show-divs.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      $("#accordion").accordion();
+    });
+  </script>
+
+  <title>Volunteer | Phipps Conservatory</title>
+  <body>
+    <div class="header-container">
+      <header class="section group">
+        <div class="header-content">
+          <div class="logo col span_3_of_12 no-vertical-margin"><a href="index.html"><img src="images/logo-white.png" /></a></div>
+
+          <nav class="col span_9_of_12 no-vertical-margin">
+            <a href="information.html">More Information</a><a href="volunteer.html">Volunteer at Phipps</a><a href="http://phipps.conservatory.org/exhibits-and-events/index.aspx">Exhibits and Events</a>
+
+            <!-- Search bar goes here -->
+            <!-- https://www.udemy.com/blog/search-box-css/ -->
+            <form class="search">
+              <input class="search-box"type="text" placeholder="Search..." required />
+              <input class="search-button" type="button" value="Search">
+            </form>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <div class="volunteer-banner">
+    </div>
+
+    <div class="auto-height testimonials">
+      <section>
+        <div class="section group extra-bottom-margin"></div>
+        <h2>What other students are saying</h2>
+
+        <div class="section group">
+          <div id="accordion" class="col span_12_of_12" >
+          <h3>Student 1</h3>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices, nunc in luctus egestas, ex justo aliquam diam, in dapibus neque nunc nec elit. Donec ac viverra turpis, nec blandit diam. In quis ipsum eu metus blandit ullamcorper non nec leo. In id aliquam mauris, eget auctor ante. Aliquam erat volutpat. Phasellus nibh lacus, luctus nec viverra quis, facilisis dapibus mauris. Duis a ipsum sed diam auctor porta in non libero. Aenean gravida mollis elit, non aliquet velit luctus vel. Maecenas ac arcu turpis. Donec fringilla est a rutrum dapibus. Donec eget mollis lorem, non rutrum massa. Sed at mi non lorem efficitur mattis viverra sit amet nulla. Proin rutrum nibh diam, in porta turpis mollis vitae. </p>
+            </div>
+            <h3>Student2</h3>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices, nunc in luctus egestas, ex justo aliquam diam, in dapibus neque nunc nec elit. Donec ac viverra turpis, nec blandit diam. In quis ipsum eu metus blandit ullamcorper non nec leo. In id aliquam mauris, eget auctor ante. Aliquam erat volutpat. Phasellus nibh lacus, luctus nec viverra quis, facilisis dapibus mauris. Duis a ipsum sed diam auctor porta in non libero. Aenean gravida mollis elit, non aliquet velit luctus vel. Maecenas ac arcu turpis. Donec fringilla est a rutrum dapibus. Donec eget mollis lorem, non rutrum massa. Sed at mi non lorem efficitur mattis viverra sit amet nulla. Proin rutrum nibh diam, in porta turpis mollis vitae. </p>
+            </div>
+            <h3>Student3</h3>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices, nunc in luctus egestas, ex justo aliquam diam, in dapibus neque nunc nec elit. Donec ac viverra turpis, nec blandit diam. In quis ipsum eu metus blandit ullamcorper non nec leo. In id aliquam mauris, eget auctor ante. Aliquam erat volutpat. Phasellus nibh lacus, luctus nec viverra quis, facilisis dapibus mauris. Duis a ipsum sed diam auctor porta in non libero. Aenean gravida mollis elit, non aliquet velit luctus vel. Maecenas ac arcu turpis. Donec fringilla est a rutrum dapibus. Donec eget mollis lorem, non rutrum massa. Sed at mi non lorem efficitur mattis viverra sit amet nulla. Proin rutrum nibh diam, in porta turpis mollis vitae. </p>
+            </div>
+            <h3>Student4</h3>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices, nunc in luctus egestas, ex justo aliquam diam, in dapibus neque nunc nec elit. Donec ac viverra turpis, nec blandit diam. In quis ipsum eu metus blandit ullamcorper non nec leo. In id aliquam mauris, eget auctor ante. Aliquam erat volutpat. Phasellus nibh lacus, luctus nec viverra quis, facilisis dapibus mauris. Duis a ipsum sed diam auctor porta in non libero. Aenean gravida mollis elit, non aliquet velit luctus vel. Maecenas ac arcu turpis. Donec fringilla est a rutrum dapibus. Donec eget mollis lorem, non rutrum massa. Sed at mi non lorem efficitur mattis viverra sit amet nulla. Proin rutrum nibh diam, in porta turpis mollis vitae. </p>
+            </div>
+          </div>
+        </div>  
+      </section>
+    </div>
+
+    <div class="auto-height sign-up-form">
+      <section class="hidden">
+        <h2>Sign Up Now</h2>
+        <div class="section group gallery-container">
+          <form name="contact_form" action="mailto:generalinformation@pc.org" method="post" enctype="plain/text">
+
+            <label for="fname">First Name:</label><br/>
+            <input type="text" name="fname" required placeholder="Required" />
+            <br /><br />
+
+            <label for="lname">Last Name:</label><br/>
+            <input type="text" name="lname" required placeholder="Required" />
+            <br /><br />
+
+            <label for="email">Email Address:</label><br/>
+            <input type="email" name="email" required placeholder="Required" />
+            <br /><br />
+
+            <label for="comment">How you want to get involved:</label><br />
+            <textarea name="comment" rows="7" cols="42">
+          </textarea>
+          <br />
+
+
+          <input class="button" type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="footer-container">
+   <footer class="section group hidden">
+    <iframe class="col span_5_of_12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6512360771985!2d-79.948524!3d40.43872100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f189f8429905%3A0x28a12fe50786460d!2sPhipps+Conservatory+and+Botanical+Gardens!5e0!3m2!1sen!2sus!4v1413946430966" width="424" height="315" frameborder="0" style="border:0"></iframe>
+
+    <div class="col span_1_of_12"></div> <!-- some empty space for content -->
+
+    <div class="col span_3_of_12">
+      <h3>Visit Us</h3>
+      <ul>
+        <li>Open 9:30am to 5pm Saturday to Thursday<br/>9:30am to 10pm Friday</li>
+        <li>Closed Thanksgiving and Christmas<br/><br/></li>
+        <li>$14 for Students with a valid ID<br/><br/></li>
+        <li>Phipps Conservatory and Botanical Gardens<br/>One Schenley Park<br/>Pittsburgh, PA 15213</li>
+      </ul>
+    </div>
+
+    <div class="col span_3_of_12">
+      <h3>Get in Touch</h3>
+      <ul>
+        <li><a href="phipps.conservatory.org">phipps.conservatory.org</a></li><br/>
+        <li><a href="mailto:generalinformation@pc.org">Send Us an Email</a></li><br/>
+        <li>412-622-6914</li>
+      </ul>
+
+      <br/>
+
+      <!-- Icons taken from https://www.behance.net/gallery/Geekly-40-Flat-Icons/10357351 -->
+      <a href="https://www.facebook.com/phippsconservatory"><img class="socialmedia-icon" src="images/Geekly - 40 Flat Icons/Icons/Social Media/Facebook.png"></a>
+
+      <a href="https://twitter.com/PhippsNews"><img class="socialmedia-icon" src="images/Geekly - 40 Flat Icons/Icons/Social Media/Twitter.png"></a>
+
+      <a href="http://www.youtube.com/user/phippsconservatory"><img class="socialmedia-icon" src="images/Geekly - 40 Flat Icons/Icons/Social Media/Youtube.png"></a>
+
+      <a href="https://www.flickr.com/photos/phippsconservatory"><img class="socialmedia-icon" src="images/Geekly - 40 Flat Icons/Icons/Social Media/Flickr.png"></a>
+
+      <br/><br/>
+      <p>&copy; 2014 | Alex Wang | 67-250</p>
+
+
+    </div>
+  </footer>
+</div>
+</body>
+</html>
